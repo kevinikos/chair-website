@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* layout */
+.main_width {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+.top_bar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+.top_bar h1 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.top_bar span {
+  color: #3eb49c;
+  font-weight: bold;
+}
+.menu {
+  list-style: none;
+  display: flex;
+}
+.menu_item {
+  padding: 0 18px;
+}
+.item_link {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* slider section */
+.slider_section {
+  height: 505px;
+  border: 1px solid red;
+  padding: 70px 50px;
+}
+.slider {
+  display: flex;
+  position: relative;
+}
+.slider_avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider_avatar {
+  width: 100%;
+  height: 420px;
+  background-image: url(../images/black_chair.png);
+  background-size: cover;
+  background-position: 20%;
+}
+.column:first-child {
+  width: 40%;
+}
+.column:last-child {
+  width: 60%;
+}
+.slider_content {
+  text-align: center;
+  width: 74%;
+  padding: 65px 0 0 67px;
+}
+.slider_content h2 {
+  font-size: 39px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.slider_content span {
+  color: #3eb49c;
+  font-weight: 600;
+}
+.slider_content p {
+  line-height: 24px;
+  padding: 28px 0;
+}
+.slider_content button {
+  width: 270px;
+  height: 50px;
+  color: white;
+  background-color: #3eb49c;
+  font-size: 25px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+}
+.slider::before {
+  content: "<";
+  color: #3eb49c;
+  font-size: 75px;
+  position: absolute;
+  top: 140px;
+  left: 8px;
+}
+.slider::after {
+  content: ">";
+  color: #3eb49c;
+  font-size: 75px;
+  position: absolute;
+  top: 140px;
+  right: 8px;
+}
