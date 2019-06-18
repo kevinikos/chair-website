@@ -337,6 +337,9 @@ header {
 }
 
 /* contact section */
+.contact_section {
+  padding-bottom: 50px;
+}
 .contact_form {
   display: flex;
 }
@@ -402,4 +405,53 @@ header {
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+}
+.bottom_bar {
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom_bar p {
+  opacity: 0.4;
+}
+.social_media {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  background-position: center;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
+.logo.flickr {
+  background-image: url(../images/flickr.png);
+}
+.logo.vimeo {
+  background-image: url(../images/vimeo.png);
+}
+.logo.pinterest {
+  background-image: url(../images/pinterest.png);
+}
+.logo.twitter {
+  background-image: url(../images/twitter.png);
+}
+.bottom_bar p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.bottom_bar p:last-child {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.bottom_bar p:last-child span {
+  font-weight: bold;
 }
