@@ -89,6 +89,12 @@ header {
 
 /* slider section */
 .slider_section {
+  /* background: rgb(199, 199, 210);
+  background: linear-gradient(
+    0deg,
+    rgba(199, 199, 210, 1) 13%,
+    rgba(255, 254, 254, 1) 40%
+  ); */
   height: 505px;
   border: 1px solid red;
   padding: 70px 50px;
@@ -156,4 +162,47 @@ header {
   position: absolute;
   top: 140px;
   right: 8px;
+}
+
+/* chair types section */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+.box {
+  width: 31%;
+  height: 225px;
+}
+.box:first-child {
+  background-image: url(../images/box1_img.jpg);
+}
+.box:nth-child(2) {
+  background-image: url(../images/box2_img.jpg);
+}
+.box:last-child {
+  border: 1px solid rgb(212, 212, 212);
+  height: 255px;
+}
+.box_content {
+  padding-top: 145px;
+}
+.box:last-child .box_content {
+  padding-top: 8px;
+}
+.box_content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.box_content .title_underline {
+  width: 140px;
+  height: 7px;
+  background-color: #3eb49c;
+}
+.box_content p {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
 }
