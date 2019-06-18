@@ -335,3 +335,71 @@ header {
 .box_price:nth-child(even) .price_list li:nth-child(odd) {
   background-color: white;
 }
+
+/* contact section */
+.contact_form {
+  display: flex;
+}
+.left_form form {
+  width: 643px;
+  display: flex;
+  flex-direction: column;
+}
+.left_form form > * {
+  padding: 10px;
+  font-size: 35px;
+  margin-bottom: 20px;
+  border: 1px solid #a1e6d1;
+}
+.left_form textarea {
+  resize: none;
+}
+.left_form form *::placeholder,
+.right_form .checkbox_content p {
+  opacity: 0.3;
+}
+.right_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right_form .form_avatar {
+  background-image: url(../images/red_chair.png);
+  background-size: cover;
+  background-position: center -22px;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 210px;
+}
+.form_checkbox {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 60px;
+}
+.form_checkbox .checkbox_avatar {
+  background-image: url(../images/form_ok.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75px;
+  height: 50px;
+  border: 1px solid #a1e6d1;
+}
+.form_checkbox .checkbox_content {
+  padding: 0 0 30px 20px;
+  font-size: 18px;
+}
+.form_button {
+  padding: 0;
+  margin-left: 25px;
+}
+.form_button button {
+  width: 350px;
+  height: 70px;
+  color: white;
+  background-color: #3eb49c;
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+}
