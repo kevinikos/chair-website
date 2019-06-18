@@ -12,6 +12,11 @@
   width: 1070px;
   margin: 0 auto;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0 65px 0;
+}
 
 /* header */
 header {
@@ -164,11 +169,6 @@ header {
 }
 
 /* chair types section */
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding: 28px 0 65px 0;
-}
 .box {
   width: 31%;
   height: 225px;
@@ -208,12 +208,10 @@ header {
 
 /* price list section */
 .price_section {
-  height: 400px;
   background-color: #f1f1f1;
-  border: 1px solid red;
 }
 .box_header {
-  padding: 42px 0;
+  padding: 42px 0 48px 0;
 }
 .box_header h2 {
   font-size: 23px;
@@ -225,4 +223,115 @@ header {
   width: 322px;
   height: 7px;
   background-color: #3eb49c;
+}
+.box_price {
+  width: 31%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(212, 212, 212);
+  background-color: white;
+  color: #8b8b8b;
+}
+.box_price > * {
+  padding: 28px 0;
+}
+.box_price h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3eb49c;
+}
+.price_circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid rgb(212, 212, 212);
+  background-color: white;
+  color: rgb(212, 212, 212);
+  text-align: center;
+}
+.price_circle h4 {
+  font-size: 45px;
+  padding-left: 10px;
+}
+.price_circle sup {
+  font-size: 15px;
+}
+.price_circle p {
+  font-weight: bold;
+}
+.price_list ul {
+  width: 327px;
+  font-size: 24px;
+  padding-top: 11px;
+  list-style: none;
+  text-align: center;
+}
+.price_list ul li {
+  padding: 5px 0;
+  background-color: #f1f1f1;
+}
+.price_list ul li:nth-child(odd) {
+  background-color: #e4e4e4;
+}
+.box_price button {
+  width: 125px;
+  height: 36px;
+  color: white;
+  background-color: #3eb49c;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 18px;
+  left: 105px;
+}
+.box_price:nth-child(odd)::before {
+  position: absolute;
+  content: " ";
+  border: 2px solid rgb(212, 212, 212);
+  border-bottom-color: white;
+  border-right-color: white;
+  background-color: white;
+  transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
+  top: -22px;
+}
+
+/* price list section - middle green box */
+.box_price:nth-child(even)::before {
+  position: absolute;
+  content: " ";
+  border: 2px solid #3eb49c;
+  border-bottom-color: #3eb49c;
+  border-right-color: #3eb49c;
+  background-color: #3eb49c;
+  transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
+  top: -22px;
+}
+.box_price:nth-child(even) {
+  background-color: #3eb49c;
+  border: 1px solid #3eb49c;
+}
+.box_price:nth-child(even) h3 {
+  color: white;
+}
+.box_price:nth-child(even) .price_circle {
+  border: 1px solid #3eb49c;
+  color: #3eb49c;
+}
+.box_price:nth-child(even) button {
+  background-color: white;
+  color: #3eb49c;
+  font-weight: 600;
+}
+.box_price:nth-child(even) .price_list li:nth-child(odd) {
+  background-color: white;
 }
