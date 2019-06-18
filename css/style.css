@@ -96,7 +96,6 @@ header {
     rgba(255, 254, 254, 1) 40%
   ); */
   height: 505px;
-  border: 1px solid red;
   padding: 70px 50px;
 }
 .slider {
@@ -168,7 +167,7 @@ header {
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0;
+  padding: 28px 0 65px 0;
 }
 .box {
   width: 31%;
@@ -205,4 +204,25 @@ header {
   font-size: 14px;
   line-height: 22px;
   padding: 0 20px;
+}
+
+/* price list section */
+.price_section {
+  height: 400px;
+  background-color: #f1f1f1;
+  border: 1px solid red;
+}
+.box_header {
+  padding: 42px 0;
+}
+.box_header h2 {
+  font-size: 23px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+}
+.box_header .title_underline {
+  width: 322px;
+  height: 7px;
+  background-color: #3eb49c;
 }
