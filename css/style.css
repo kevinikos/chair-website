@@ -47,7 +47,7 @@ header {
 .menu_item {
   padding: 0 18px;
 }
-.item_link {
+.menu_item a {
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -169,38 +169,38 @@ header {
 }
 
 /* chair types section */
-.box {
+.chair_section .box {
   width: 31%;
   height: 225px;
 }
-.box:first-child {
+.chair_section .box:first-child {
   background-image: url(../images/box1_img.jpg);
 }
-.box:nth-child(2) {
+.chair_section .box:nth-child(2) {
   background-image: url(../images/box2_img.jpg);
 }
-.box:last-child {
+.chair_section .box:last-child {
   border: 1px solid rgb(212, 212, 212);
   height: 255px;
 }
-.box_content {
+.chair_section .box_content {
   padding-top: 145px;
 }
-.box:last-child .box_content {
+.chair_section .box:last-child .box_content {
   padding-top: 8px;
 }
-.box_content h3 {
+.chair_section .box_content h3 {
   font-size: 16px;
   font-weight: 600;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.4);
 }
-.box_content .title_underline {
+.chair_section .box_content .underline {
   width: 140px;
   height: 7px;
   background-color: #3eb49c;
 }
-.box_content p {
+.chair_section .box_content p {
   font-size: 14px;
   line-height: 22px;
   padding: 0 20px;
@@ -210,21 +210,21 @@ header {
 .price_section {
   background-color: #f1f1f1;
 }
-.box_header {
+.section_header {
   padding: 42px 0 48px 0;
 }
-.box_header h2 {
+.section_header h2 {
   font-size: 23px;
   font-weight: normal;
   text-transform: uppercase;
   padding-bottom: 7px;
 }
-.box_header .title_underline {
+.section_header .underline {
   width: 322px;
   height: 7px;
   background-color: #3eb49c;
 }
-.box_price {
+.price_section .box {
   width: 31%;
   height: 500px;
   position: relative;
@@ -235,16 +235,16 @@ header {
   background-color: white;
   color: #8b8b8b;
 }
-.box_price > * {
+.price_section .box > * {
   padding: 28px 0;
 }
-.box_price h3 {
+.price_section .box h3 {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
   color: #3eb49c;
 }
-.price_circle {
+.box_circle {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -253,31 +253,31 @@ header {
   color: rgb(212, 212, 212);
   text-align: center;
 }
-.price_circle h4 {
+.box_circle h4 {
   font-size: 45px;
   padding-left: 10px;
 }
-.price_circle sup {
+.box_circle sup {
   font-size: 15px;
 }
-.price_circle p {
+.box_circle p {
   font-weight: bold;
 }
-.price_list ul {
+.box_list ul {
   width: 327px;
   font-size: 24px;
   padding-top: 11px;
   list-style: none;
   text-align: center;
 }
-.price_list ul li {
+.box_list ul li {
   padding: 5px 0;
   background-color: #f1f1f1;
 }
-.price_list ul li:nth-child(odd) {
+.box_list ul li:nth-child(odd) {
   background-color: #e4e4e4;
 }
-.box_price button {
+.price_section .box button {
   width: 125px;
   height: 36px;
   color: white;
@@ -290,7 +290,7 @@ header {
   bottom: 18px;
   left: 105px;
 }
-.box_price:nth-child(odd)::before {
+.price_section .box:nth-child(odd)::before {
   position: absolute;
   content: " ";
   border: 2px solid rgb(212, 212, 212);
@@ -304,7 +304,7 @@ header {
 }
 
 /* price list section - middle green box */
-.box_price:nth-child(even)::before {
+.price_section .box:nth-child(even)::before {
   position: absolute;
   content: " ";
   border: 2px solid #3eb49c;
@@ -316,23 +316,23 @@ header {
   height: 40px;
   top: -22px;
 }
-.box_price:nth-child(even) {
+.price_section .box:nth-child(even) {
   background-color: #3eb49c;
   border: 1px solid #3eb49c;
 }
-.box_price:nth-child(even) h3 {
+.price_section .box:nth-child(even) h3 {
   color: white;
 }
-.box_price:nth-child(even) .price_circle {
+.price_section .box:nth-child(even) .box_circle {
   border: 1px solid #3eb49c;
   color: #3eb49c;
 }
-.box_price:nth-child(even) button {
+.price_section .box:nth-child(even) button {
   background-color: white;
   color: #3eb49c;
   font-weight: 600;
 }
-.box_price:nth-child(even) .price_list li:nth-child(odd) {
+.price_section .box:nth-child(even) .box_list li:nth-child(odd) {
   background-color: white;
 }
 
