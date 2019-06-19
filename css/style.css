@@ -458,3 +458,12 @@ footer {
 .bottom_bar p:last-child span {
   font-weight: bold;
 }
+
+/* active buttons hover */
+.button_active:hover {
+  background-color: white;
+  color: #3eb49c;
+  border: 2px solid #3eb49c;
+  font-weight: 600;
+  transition: 0.4s;
+}
