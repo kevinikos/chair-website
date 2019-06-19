@@ -67,8 +67,9 @@ header {
   padding-left: 15px;
   list-style: none;
   top: -150px;
+  /* top: 52px; */
   left: -2px;
-  z-index: -1;
+  z-index: 1;
   transition: 0.3s;
 }
 .dropdown_content::before {
@@ -94,14 +95,16 @@ header {
 
 /* slider section */
 .slider_section {
-  /* background: rgb(199, 199, 210);
-  background: linear-gradient(
-    0deg,
-    rgba(199, 199, 210, 1) 13%,
-    rgba(255, 254, 254, 1) 40%
-  ); */
   height: 505px;
   padding: 70px 50px;
+  background: rgb(221, 220, 230);
+  background: linear-gradient(
+    0deg,
+    rgba(221, 220, 230, 1) 0%,
+    rgba(243, 242, 245, 1) 27%,
+    rgba(246, 245, 248, 1) 36%,
+    rgba(255, 254, 254, 1) 90%
+  );
 }
 .slider {
   display: flex;
