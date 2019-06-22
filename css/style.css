@@ -365,7 +365,7 @@ header {
 }
 .left_form form *::placeholder,
 .right_form .checkbox_content p {
-  opacity: 0.3;
+  color: #cecece;
 }
 .right_form {
   display: flex;
@@ -379,23 +379,6 @@ header {
   background-repeat: no-repeat;
   width: 240px;
   height: 210px;
-}
-.form_checkbox {
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 60px;
-}
-.form_checkbox .checkbox_avatar {
-  background-image: url(../images/form_ok.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 75px;
-  height: 50px;
-  border: 1px solid #a1e6d1;
-}
-.form_checkbox .checkbox_content {
-  padding: 0 0 30px 20px;
-  font-size: 18px;
 }
 .form_button {
   padding: 0;
@@ -411,6 +394,48 @@ header {
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
+}
+/* checkbox */
+.checkbox {
+  position: relative;
+  padding: 10px 0 30px 60px;
+}
+.checkbox input {
+  display: block;
+  opacity: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  cursor: pointer;
+}
+.checkbox label {
+  display: block;
+  padding-left: 65px;
+  position: relative;
+  font-size: 20px;
+  color: #cecece;
+  line-height: 120%;
+  cursor: pointer;
+}
+.checkbox label::before,
+.checkbox label::after {
+  border: 1px solid #a1e6d1;
+  content: "";
+  display: block;
+  left: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  top: 0;
+}
+.checkbox label::after {
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A")
+    no-repeat center;
+  border: 0;
+  display: none;
+}
+.checkbox input:checked + label::after {
+  display: block;
 }
 
 /* footer */
