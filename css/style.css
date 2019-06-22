@@ -67,7 +67,6 @@ header {
   padding-left: 15px;
   list-style: none;
   top: -150px;
-  /* top: 52px; */
   left: -2px;
   z-index: 1;
   transition: 0.3s;
@@ -96,7 +95,7 @@ header {
 /* slider section */
 .slider_section {
   height: 505px;
-  padding: 70px 50px;
+  padding: 70px 0;
   background: rgb(221, 220, 230);
   background: linear-gradient(
     0deg,
@@ -356,6 +355,10 @@ header {
   font-size: 35px;
   margin-bottom: 20px;
   border: 1px solid #a1e6d1;
+}
+.left_form form > *:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3eb49c;
 }
 .left_form textarea {
   resize: none;
