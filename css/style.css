@@ -338,6 +338,15 @@ header {
   background-color: white;
 }
 
+/* price list section - zoom button */
+.price_section button:hover {
+  transform: scale(1.1);
+  transition: all ease 400ms;
+}
+.price_section button:focus {
+  outline: none;
+}
+
 /* contact section */
 .contact_section {
   padding-bottom: 50px;
@@ -395,7 +404,8 @@ header {
   border: none;
   border-radius: 10px;
 }
-/* checkbox */
+
+/* contact section - checkbox */
 .checkbox {
   position: relative;
   padding: 10px 0 30px 60px;
@@ -487,11 +497,14 @@ footer {
   font-weight: bold;
 }
 
-/* active buttons hover */
+/* main buttons hover */
 .button_active:hover {
   background-color: white;
   color: #3eb49c;
   border: 2px solid #3eb49c;
   font-weight: 600;
   transition: 0.4s;
+}
+.button_active:focus {
+  outline: none;
 }
