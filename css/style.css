@@ -104,10 +104,10 @@ header {
     rgba(246, 245, 248, 1) 36%,
     rgba(255, 254, 254, 1) 90%
   );
+  position: relative;
 }
 .slider {
   display: flex;
-  position: relative;
 }
 .slider_avatar {
   display: flex;
@@ -153,21 +153,18 @@ header {
   border: none;
   border-radius: 10px;
 }
-.slider::before {
-  content: "<";
+.left_arrow,
+.right_arrow {
   color: #3eb49c;
   font-size: 75px;
   position: absolute;
-  top: 140px;
-  left: 8px;
+  top: 212px;
 }
-.slider::after {
-  content: ">";
-  color: #3eb49c;
-  font-size: 75px;
-  position: absolute;
-  top: 140px;
-  right: 8px;
+.left_arrow {
+  left: 113px;
+}
+.right_arrow {
+  right: 133px;
 }
 
 /* chair types section */
