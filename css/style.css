@@ -104,10 +104,10 @@ header {
     rgba(246, 245, 248, 1) 36%,
     rgba(255, 254, 254, 1) 90%
   );
-  position: relative;
 }
 .slider {
   display: flex;
+  position: relative;
 }
 .slider_avatar {
   display: flex;
@@ -158,13 +158,13 @@ header {
   color: #3eb49c;
   font-size: 75px;
   position: absolute;
-  top: 212px;
+  top: 142px;
 }
 .left_arrow {
-  left: 113px;
+  left: 8px;
 }
 .right_arrow {
-  right: 133px;
+  right: 16px;
 }
 
 /* chair types section */
