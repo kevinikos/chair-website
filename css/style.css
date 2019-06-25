@@ -443,7 +443,7 @@ header {
 .checkbox input:checked + label::after {
   display: block;
 }
-.shake_checkbox {
+.shake_element {
   animation: shake 0.7s;
   animation-iteration-count: infinite;
 }
