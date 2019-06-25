@@ -1,7 +1,9 @@
-// checkbox
 const checkboxStatus = document.getElementById("permission");
 const checkbox = document.querySelector(".checkbox");
+const inputs = document.querySelectorAll("form input, form textarea");
+const sendBtn = document.getElementById("sendBtn");
 
+// checkbox
 const shakeCheckbox = e => {
   if (checkboxStatus.checked === false) {
     checkbox.classList.add("shake_element");
@@ -11,14 +13,13 @@ const shakeCheckbox = e => {
     e.preventDefault();
     return false;
   }
+  checkboxStatus.value = "accepted";
   return true;
 };
 
-// inputs
-const inputs = document.querySelectorAll("input, textarea");
-const sendBtn = document.getElementById("sendBtn");
-
+// text inputs
 const shakeElements = e => {
+  shakeCheckbox(e);
   inputs.forEach(input => {
     if (input.value === "") {
       input.classList.add("shake_element");
@@ -29,7 +30,6 @@ const shakeElements = e => {
       return false;
     }
   });
-  shakeCheckbox();
   return true;
 };
 
