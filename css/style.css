@@ -171,16 +171,34 @@ header {
 .chair_section .box {
   width: 31%;
   height: 225px;
+  overflow: hidden;
 }
-.chair_section .box:first-child {
+.chair_section .box:first-child .box_background {
   background-image: url(../images/box1_img.jpg);
 }
-.chair_section .box:nth-child(2) {
+.chair_section .box:nth-child(2) .box_background {
   background-image: url(../images/box2_img.jpg);
 }
+.chair_section .box:first-child .box_background,
+.chair_section .box:nth-child(2) .box_background {
+  height: 225px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.chair_section .box:first-child .box_background:hover,
+.chair_section .box:nth-child(2) .box_background:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .chair_section .box:last-child {
-  border: 1px solid rgb(212, 212, 212);
   height: 255px;
+  border: 1px solid rgb(212, 212, 212);
 }
 .chair_section .box_content {
   padding-top: 145px;
