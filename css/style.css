@@ -251,6 +251,10 @@ header {
   border: 2px solid rgb(212, 212, 212);
   background-color: white;
   color: #8b8b8b;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.price_section .box:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22), 0 8px 8px rgba(0, 0, 0, 0.19);
 }
 .price_section .box > * {
   padding: 28px 0;
@@ -351,12 +355,6 @@ header {
 }
 .price_section .box:nth-child(even) .box_list li:nth-child(odd) {
   background-color: white;
-}
-
-/* price list section - zoom button */
-.price_section button:hover {
-  transform: scale(1.1);
-  transition: all ease 400ms;
 }
 .price_section button:focus {
   outline: none;
@@ -551,6 +549,9 @@ footer {
 }
 
 /* main buttons hover */
+button:hover {
+  cursor: pointer;
+}
 .button_active:hover {
   background-color: white;
   color: #3eb49c;
