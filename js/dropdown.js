@@ -1,7 +1,7 @@
 const dropdown = () => {
   const menuItem = document.querySelector(".menu .menu_item.dropdown");
   const dropdownContent = menuItem.querySelector(".dropdown_content");
-  console.log(menuItem);
+
   menuItem.addEventListener("mouseover", () => {
     dropdownContent.classList.add("show");
   });

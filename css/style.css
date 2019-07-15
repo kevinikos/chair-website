@@ -118,11 +118,19 @@ header {
     rgba(255, 254, 254, 1) 90%
   );
 }
-.slider {
-  display: flex;
+.slider_list {
   position: relative;
 }
-.slider_avatar {
+.slider_list ul {
+  list-style: none;
+}
+.slider_list li {
+  display: none;
+}
+.slider {
+  display: flex;
+}
+.slider_avatar.black {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +139,16 @@ header {
   background-image: url(../images/black_chair.png);
   background-size: cover;
   background-position: 20%;
+}
+.slider_avatar.orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 365px;
+  background-image: url(../images/orange_chair.png);
+  background-size: cover;
+  margin-top: 25px;
 }
 .column:first-child {
   width: 40%;
@@ -173,13 +191,19 @@ header {
   position: absolute;
   top: 142px;
 }
+.left_arrow:hover,
+.right_arrow:hover {
+  cursor: pointer;
+}
 .left_arrow {
   left: 8px;
 }
 .right_arrow {
   right: 16px;
 }
-
+.slider_list li.visible {
+  display: block;
+}
 /* chair types section */
 .chair_section .box {
   width: 31%;
